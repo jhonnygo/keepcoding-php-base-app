@@ -1,0 +1,21 @@
+{
+    "name": "jhoncytech/keepcoding-php-base-app",
+    "description": "Aplicación base para pruebas en módulos de Keepcoding Academy",
+    "type": "library",
+    "keywords": ["keepcoding", "bootcamp", "devops"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jhoncytech\\KcBaseApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jhonny A. Gomez S.",
+            "email": "jhonny@jhoncytech.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
