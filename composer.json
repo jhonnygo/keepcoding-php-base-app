@@ -17,5 +17,11 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jhonnygo/keepcoding-php-base-app.git"
+        }
+    ]
 }
