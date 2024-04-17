@@ -1,7 +1,5 @@
 <?php
 
-namespace Jhoncytech\KcBaseApp;
-
 require_once __DIR__ . '/lib/Saludo.php';
 
 use Jhoncytech\KcBaseApp\Lib\Saludo;
@@ -42,7 +40,7 @@ $horaFormateada = date("H:i", strtotime($horaActual) + (2 * 3600));
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">KEEPCODING 1</a>
+                <a class="nav-link active" aria-current="page" href="#">KEEPCODING 7</a>
             </li>
             </ul>
         </div>
