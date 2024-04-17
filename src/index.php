@@ -1,3 +1,12 @@
+<?php
+require_once 'lib/Saludo.php';
+
+use MiNamespace\Lib\Saludo;
+
+$saludo = new Saludo();
+$horaActual = date("H:i");
+$horaFormateada = date("H:i", strtotime($horaActual) + (2 * 3600));
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +26,14 @@
         <div class="container">
         <!-- Logo con imagen -->
         <a class="navbar-brand" href="#"><img src="img/logo-125X77.png" alt="Logo" height="77"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -33,7 +49,10 @@
     <header class="bg-dark text-white py-5">
         <div class="container text-center">
             <h1 class="display-4">Keepcoding Academy</h1>
-            <p class="lead">Proyecto practico CI/CD - Compromiso con la educación y la tecnología</p>
+            <h3><?php echo "Son las: " . $horaFormateada . " - " . $saludo->obtenerSaludo($horaFormateada); ?></h3>
+            <p class="lead">
+                Proyecto practico CI/CD - Compromiso con la educación y la tecnología
+            </p>
         </div>
     </header>
 
@@ -41,12 +60,20 @@
     
         <h1 class="display-4 fw-bold">Tecnología Educativa</h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">La tecnología educativa está revolucionando la enseñanza, facilitando el acceso a la información y fomentando la colaboración global. Esta integración transformadora está redefiniendo la experiencia educativa para estudiantes y educadores en todo el mundo.</p>
+            <p class="lead mb-4">La tecnología educativa está revolucionando la enseñanza, 
+                facilitando el acceso a la información y fomentando la colaboración global. 
+                Esta integración transformadora está redefiniendo la experiencia educativa 
+                para estudiantes y educadores en todo el mundo.</p>
         </div>
     
         <div class="overflow-hidden" style="max-height: 30vh;">
             <div class="container px-5">
-                <img src="img/happy-coding.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="300" loading="lazy">
+                <img 
+                    src="img/happy-coding.jpg" 
+                    class="img-fluid border rounded-3 shadow-lg mb-4" 
+                    alt="Example image" 
+                    width="300" 
+                    loading="lazy">
             </div>
         </div>
 
