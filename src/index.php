@@ -1,5 +1,34 @@
 <?php
 
+/**
+ * Este archivo contiene un script para la aplicación Keepcoding Academy.
+ *
+ * @category Library
+ * @package  KcBaseApp
+ * @author   Juan Perez <juanperez@example.com>
+ * @license  MIT License (https://opensource.org/licenses/MIT)
+ * @link     https://jhonnygo.com
+ */
+
+/**
+ * COMPOSER AUTOLOAD
+ */
+if (file_exists('vendor/autoload.php')) {
+    // El directorio vendor y el archivo autoload.php existen
+    include 'vendor/autoload.php';
+
+    // Composer Package
+    // require 'vendor/jhoncytech/keepcoding-php-base-app/src/index.php';
+} else {
+    // El directorio vendor o el archivo autoload.php no existen
+    echo 'Error: El directorio vendor o el archivo autoload.php no existen.<br/>';
+    echo 'Asegúrate de haber instalado las dependencias de Composer.<br/>';
+    echo 'Para ello ejecuta: <br/><br/>';
+    echo '<strong>#> composer require jhoncytech/keepcoding-php-base-app</strong>';
+    // Detiene la ejecución del script
+    die();
+}
+
 require_once __DIR__ . '/lib/Saludo.php';
 
 use Jhoncytech\KcBaseApp\Lib\Saludo;
@@ -27,20 +56,20 @@ $horaFormateada = date("H:i", strtotime($horaActual) + (2 * 3600));
         <div class="container">
         <!-- Logo con imagen -->
         <a class="navbar-brand" href="#"><img src="img/logo-125X77.png" alt="Logo" height="77"></a>
-        <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" 
-            aria-expanded="false" 
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">KEEPCODING 7</a>
+                <a class="nav-link active" aria-current="page" href="#">KEEPCODING 19</a>
             </li>
             </ul>
         </div>
@@ -61,19 +90,19 @@ $horaFormateada = date("H:i", strtotime($horaActual) + (2 * 3600));
     
         <h1 class="display-4 fw-bold">Tecnología Educativa</h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">La tecnología educativa está revolucionando la enseñanza, 
-                facilitando el acceso a la información y fomentando la colaboración global. 
-                Esta integración transformadora está redefiniendo la experiencia educativa 
+            <p class="lead mb-4">La tecnología educativa está revolucionando la enseñanza,
+                facilitando el acceso a la información y fomentando la colaboración global.
+                Esta integración transformadora está redefiniendo la experiencia educativa
                 para estudiantes y educadores en todo el mundo.</p>
         </div>
     
         <div class="overflow-hidden" style="max-height: 30vh;">
             <div class="container px-5">
-                <img 
-                    src="img/happy-coding.jpg" 
-                    class="img-fluid border rounded-3 shadow-lg mb-4" 
-                    alt="Example image" 
-                    width="300" 
+                <img
+                    src="img/happy-coding.jpg"
+                    class="img-fluid border rounded-3 shadow-lg mb-4"
+                    alt="Example image"
+                    width="300"
                     loading="lazy">
             </div>
         </div>
