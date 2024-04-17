@@ -1,7 +1,10 @@
 <?php
-require_once 'lib/Saludo.php';
 
-use MiNamespace\Lib\Saludo;
+namespace Jhoncytech\KcBaseApp;
+
+require_once __DIR__ . '/Saludo.php';
+
+use Jhoncytech\KcBaseApp\Lib\Saludo;
 
 $saludo = new Saludo();
 $horaActual = date("H:i");

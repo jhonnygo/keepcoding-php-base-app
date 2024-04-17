@@ -1,5 +1,7 @@
 <?php
 
+namespace Jhoncytech\KcBaseApp\Tests;
+
 use PHPUnit\Framework\TestCase;
 use Jhoncytech\KcBaseApp\Lib\Saludo;
 
