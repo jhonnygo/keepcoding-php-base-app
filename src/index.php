@@ -1,5 +1,22 @@
 <?php
 
+/**
+ * COMPOSER AUTOLOAD
+ */
+
+if (file_exists('vendor/autoload.php')) {
+    // El directorio vendor y el archivo autoload.php existen
+    include 'vendor/autoload.php';
+} else {
+    // El directorio vendor o el archivo autoload.php no existen
+    echo 'Error: El directorio vendor o el archivo autoload.php no existen.<br/>';
+    echo 'Asegúrate de haber instalado las dependencias de Composer.<br/>';
+    echo 'Para ello ejecuta: <br/><br/>';
+    echo '<strong>#> composer require jhoncytech/keepcoding-php-base-app</strong>';
+    // Detiene la ejecución del script
+    die();
+}
+
 require_once __DIR__ . '/lib/Saludo.php';
 
 use Jhoncytech\KcBaseApp\Lib\Saludo;
@@ -40,7 +57,7 @@ $horaFormateada = date("H:i", strtotime($horaActual) + (2 * 3600));
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">KEEPCODING 5</a>
+                <a class="nav-link active" aria-current="page" href="#">KEEPCODING 10</a>
             </li>
             </ul>
         </div>
