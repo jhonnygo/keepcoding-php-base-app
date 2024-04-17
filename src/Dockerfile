@@ -44,7 +44,9 @@ RUN apt-get -y install mariadb-client nano dos2unix && \
     dos2unix /usr/local/bin/start.sh && \
     chmod +x /usr/local/bin/start.sh
 
-COPY index.php img lib ./
+COPY ./index.php /var/www/html/
+COPY ./img /var/www/html/img
+COPY ./lib /var/www/html/lib
 
 # CMD que Ejecuta el script de inicio
 CMD ["/bin/bash", "-c", "/usr/local/bin/start.sh"]
