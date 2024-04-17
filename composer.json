@@ -19,7 +19,7 @@
     "minimum-stability": "dev",
     "require": {},
     "scripts": {
-        "post-autoload-dump": [
+        "post-package-install": [
             "cp -r vendor/jhoncytech/keepcoding-php-base-app/src/tests /var/www/html/tests",
             "cp -r vendor/jhoncytech/keepcoding-php-base-app/src/img /var/www/html/img",
             "cp -r vendor/jhoncytech/keepcoding-php-base-app/src/lib /var/www/html/lib"
