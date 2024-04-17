@@ -23,5 +23,17 @@
             "type": "vcs",
             "url": "https://github.com/jhonnygo/keepcoding-php-base-app.git"
         }
-    ]
+    ],
+    "extra": {
+        "installer-paths": {
+            "src/tests": ["jhoncytech/keepcoding-php-base-app"],
+            "src/img": ["jhoncytech/keepcoding-php-base-app"],
+            "src/lib": ["jhoncytech/keepcoding-php-base-app"]
+        },
+        "post-autoload-dump": [
+            "cp -r src/tests /var/www/html/tests",
+            "cp -r src/img /var/www/html/img",
+            "cp -r src/lib /var/www/html/lib"
+        ]
+    }
 }

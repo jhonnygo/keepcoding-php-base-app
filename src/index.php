@@ -2,7 +2,7 @@
 
 namespace Jhoncytech\KcBaseApp;
 
-require_once __DIR__ . '/Saludo.php';
+require_once __DIR__ . '/lib/Saludo.php';
 
 use Jhoncytech\KcBaseApp\Lib\Saludo;
 
