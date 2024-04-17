@@ -2,6 +2,8 @@
 
 namespace Jhoncytech\KcBaseApp\Tests;
 
+require_once __DIR__ . '/../lib/Saludo.php';
+
 use PHPUnit\Framework\TestCase;
 use Jhoncytech\KcBaseApp\Lib\Saludo;
 
